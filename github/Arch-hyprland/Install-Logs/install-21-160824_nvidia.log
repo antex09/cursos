@@ -1,0 +1,34 @@
+Sync Explicit (1): nvidia-open-dkms-590.48.01-1
+resolving dependencies...
+looking for conflicting packages...
+:: nvidia-open-dkms-590.48.01-1 and nvidia-lts-1:580.105.08-4 are in conflict (NVIDIA-MODULE). Remove nvidia-lts? [y/N] error: unresolvable package conflicts detected
+error: failed to prepare transaction (conflicting dependencies)
+
+:: nvidia-open-dkms-590.48.01-1 and nvidia-lts-1:580.105.08-4 are in conflict
+ -> error installing repo packages
+Nvidia modules already included in /etc/mkinitcpio.conf
+[34m[INFO](B[m Rebuilding [33mInitramfs(B[m...
+==> Building image from preset: /etc/mkinitcpio.d/linux-lts.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux-lts -g /boot/initramfs-linux-lts.img
+==> Starting build: '6.12.59-1-lts'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-lts.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+[34m[INFO](B[m [33mGRUB(B[m bootloader detected
+[34m[INFO](B[m [33mGRUB(B[m configuration regenerated
+[32m[OK](B[m Additional steps for [33mGRUB(B[m completed
